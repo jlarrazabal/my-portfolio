@@ -13,85 +13,84 @@
 
 <body>
   <!-- My Header -->
-  <header>
-    <nav>
+  <div class="space"></div>
+  <header class="flex-header">
+    <div class="flex-title">
       <h1>JAVIER'S PORTFOLIO</h1>
-      <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">My Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
-        <li><a href="#">Resume</a></li>
-      </ul>
-    </nav>
+    </div>
+    <div class="flex-links">
+      <a href="#">About Me</a>
+      <a href="#">My Projects</a>
+      <a href="#">Contact Me</a>
+      <a href="#">Resume</a>
+    </div>
   </header>
-
+  <div class="space"></div>
   <!-- Main area of the page -->
   <main>
     <!-- Greetings Section -->
-    <section>
-      <div class="">
-        <img src="https://via.placeholder.com/300" alt="My picture">
-        <h3>Hello, I am Javier Larrazabal</h3>
-        <h3>a Web Apps Developer!</h3>
-      </div>
+    <section class="flex-greeting">
+        <img src="./assets/images/my-picture.jpg" alt="My picture" class="greeting-item">
+        <h3 class="greeting-item">Hello, I am Javier Larrazabal a Web Apps Developer!</h3>
     </section>
     <!-- About Me Section -->
-    <section>
-      <h3>About Me</h3>
-      <p>This is a paragraph</p>
+    <section class="flexbox">
+      <article class="flex-item">
+        <h3>About Me</h3>
+        <p>This is a paragraph</p>
+      </article>
     </section>
     <!-- My Projects Section -->
-    <section>
-      <div class="">
+    <section class="flexbox">
+      <article class="main-project">
         <h3>My Projects</h3>
         <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
         <p>This a paragraph</p>
-      </div>
-      <div class="">
+      </article>
+      <article class="flex-item">
         <h3>My Projects</h3>
         <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
         <p>This a paragraph</p>
-      </div>
-      <div class="">
+      </article>
+      <article class="flex-item">
         <h3>My Projects</h3>
         <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
         <p>This a paragraph</p>
-      </div>
-      <div class="">
+      </article>
+      <article class="flex-item">
         <h3>My Projects</h3>
         <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
         <p>This a paragraph</p>
-      </div>
-      <div class="">
+      </article>
+      <article class="flex-item">
         <h3>My Projects</h3>
         <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
         <p>This a paragraph</p>
-      </div>
+      </article>
+      <article class="flex-item">
+        <h3>My Projects</h3>
+        <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
+        <p>This a paragraph</p>
+      </article>
+
     </section>
     <!-- Contact Me Section -->
-    <section>
-      <form class="" action="index.html" method="post">
-        <label for="your-name">Name: </label>
-        <input type="text" name="your-name" placeholder="What is your name?">
-        <label for="your-email">Email: </label>
-        <input type="email" name="your-email" placeholder="What is your email address?">
-        <label for="your-message">Your Message</label>
-        <textarea name="your-message" rows="8" cols="80" placeholder="Type your message here"></textarea>
-        <button type="submit" name="button">Send</button>
-      </form>
+    <section class="flexbox">
+      <h5>javier.larrazabal1988@gmail.com</h5>
+      <h5><a href="#">GitHub</a></h5>
+      <h5><a href="#">LinkedIn</a></h5>
     </section>
     <!-- My Footer -->
     <footer>
-      <div class="">
+      <nav class="flexbox">
         <ul>
           <li><a href="#">About Me</a></li>
           <li><a href="#">My Projects</a></li>
           <li><a href="#">Contact Me</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Resume</a></li>
         </ul>
-      </div>
-      <div class="">
+      </nav>
+      <div class="flexbox">
         <h6>©Javier Larrazabal 2021</h6>
       </div>
     </footer>

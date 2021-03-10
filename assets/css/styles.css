@@ -1,4 +1,95 @@
-*{
+/* General Styles */
+* {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
 }
+
+main {
+  background: #f8f1f1;
+}
+
+/* Header Styles */
+.flex-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  background-color: #16697a;
+}
+
+.flex-title {
+  flex-grow: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 7rem;
+}
+
+.flex-title h1 {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 4rem;
+  margin: 0;
+  color: white;
+  background-color: #db6400;
+  font-weight: bold;
+}
+
+.flex-links {
+  flex-grow: 1;
+  text-align: right;
+  position: relative;
+}
+
+.flex-links a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.space {
+  height: 0.5rem;
+  background-color: #ffa62b;
+}
+
+/* Greetings Section Styles */
+.flex-greeting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.flex-greeting img {
+  border-radius: 100%;
+  max-width: 25%;
+  border: solid 0.5rem #ffa62b;
+  padding: 0;
+}
+
+.greeting-item {
+  padding: 1rem;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 2px black;
+  justify-content: center;
+}
+
+.flex-item {
+  border: solid 2px black;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.main-project {}
