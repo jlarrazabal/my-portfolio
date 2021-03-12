@@ -1,0 +1,22 @@
+/* General Styles */
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #16697a;
+  font-weight: lighter;
+}
+
+main {
+  background: #f8f1f1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
