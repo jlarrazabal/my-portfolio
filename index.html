@@ -14,90 +14,94 @@
 
 <body>
   <!-- My Header -->
-  <header class="flex-header">
-    <div class="flex-title">
+  <header class="header">
+    <div class="header-title">
       <h1>JAVIER'S PORTFOLIO</h1>
     </div>
-    <div class="flex-links">
-      <a href="#">About Me</a>
-      <a href="#">My Projects</a>
-      <a href="#">Contact Me</a>
-      <a href="#">Resume</a>
+    <div class="links">
+      <a href="#about-me">About Me</a>
+      <a href="#my-projects">My Projects</a>
+      <a href="#contact-me">Contact Me</a>
+      <a href="https://jlarrazabal.github.io/Resume/" target="_blank">Resume</a>
     </div>
   </header>
   <!-- Main area of the page -->
   <main>
     <!-- Greetings Section -->
-    <section class="flex-greeting">
-        <img src="./assets/images/my-picture.jpg" alt="My picture" class="greeting-item">
-      <h3 class="greeting-item">Hello, I am Javier, an IT Project Manager, and Web Apps Developer!!</h3>
+    <section class="flexbox flex-column">
+      <img src="./assets/images/my-picture.jpg" alt="My picture" class="my-picture">
+      <h3 class="greeting-text">Hello, I am Javier, an IT Project Manager, and Web Apps Developer!!</h3>
     </section>
     <!-- About Me Section -->
-    <section class="flex-about">
-        <h3 class="flex-about-title">About Me</h3>
-        <p class="flex-about-paragraph">I am an IT Project Manager and Web Developer with experience in software implementations, API integrations, front-end development (HTML, CSS, JavaScript, EJS, Bootstrap, and JQuery), and backend-development (Node.js, MongoDB, Mongoose, NPM, and Authentication).</p>
+    <section class="flexbox flex-column">
+      <h2 id="about-me" class="title">About Me</h2>
+      <p class="about-me">I am an IT Project Manager and Web Developer with experience in software implementations, API integrations, front-end development (HTML, CSS, JavaScript, EJS, Bootstrap, and JQuery), and backend-development
+        (Node.js, MongoDB, Mongoose, NPM, and Authentication).</p>
     </section>
     <!-- My Projects Section -->
     <section>
-      <h3 class="my-projects-title">My Projects</h3>
+      <h2 id="my-projects" class="title">My Projects</h2>
       <div class="flexbox">
-        <article class="main-project">
-          <h4>Project Title</h4>
-          <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
-          <p><span>Summary: </span>This is my first project!</p>
+        <article class="card">
+          <h4 class="width-85">Project Title</h4>
+          <img class="width-85" src="https://via.placeholder.com/300" alt="This a placeholder Image">
+          <p class="width-85"><span>Summary: </span>This is my first project!</p>
         </article>
       </div>
       <div class="flexbox">
-        <article class="flex-item">
-          <h4>Project Title</h4>
-          <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
-          <p><span>Summary: </span>This is a project!</p>
+        <article class="card">
+          <h4 class="width-70">Project Title</h4>
+          <img class="width-70" src="https://via.placeholder.com/300" alt="This a placeholder Image">
+          <p class="width-70"><span>Summary: </span>This is a project!</p>
         </article>
-        <article class="flex-item">
-          <h4>Project Title</h4>
-          <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
-          <p><span>Summary: </span>This is a project!</p>
+        <article class="card">
+          <h4 class="width-70">Project Title</h4>
+          <img class="width-70" src="https://via.placeholder.com/300" alt="This a placeholder Image">
+          <p class="width-70"><span>Summary: </span>This is a project!</p>
         </article>
-        <article class="flex-item">
-          <h4>Project Title</h4>
-          <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
-          <p><span>Summary: </span>This is a project!</p>
+        <article class="card">
+          <h4 class="width-70">Project Title</h4>
+          <img class="width-70" src="https://via.placeholder.com/300" alt="This a placeholder Image">
+          <p class="width-70"><span>Summary: </span>This is a project!</p>
         </article>
-        <article class="flex-item">
-          <h4>Project Title</h4>
-          <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
-          <p><span>Summary: </span>This is a project!</p>
+        <article class="card">
+          <h4 class="width-70">Project Title</h4>
+          <img class="width-70" src="https://via.placeholder.com/300" alt="This a placeholder Image">
+          <p class="width-70"><span>Summary: </span>This is a project!</p>
         </article>
-        <article class="flex-item">
-          <h4>Project Title</h4>
-          <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
-          <p><span>Summary: </span>This is a project!</p>
+        <article class="card">
+          <h4 class="width-70">Project Title</h4>
+          <img class="width-70" src="https://via.placeholder.com/300" alt="This a placeholder Image">
+          <p class="width-70"><span>Summary: </span>This is a project!</p>
         </article>
-        <article class="flex-item">
-          <h4>Project Title</h4>
-          <img src="https://via.placeholder.com/300" alt="This a placeholder Image">
-          <p><span>Summary: </span>This is a project!</p>
+        <article class="card">
+          <h4 class="width-70">Project Title</h4>
+          <img class="width-70" src="https://via.placeholder.com/300" alt="This a placeholder Image">
+          <p class="width-70"><span>Summary: </span>This is a project!</p>
         </article>
 
       </div>
     </section>
     <!-- Contact Me Section -->
-    <section class="flexbox">
-      <h5>javier.larrazabal1988@gmail.com</h5>
-      <h5><a href="#">GitHub</a></h5>
-      <h5><a href="#">LinkedIn</a></h5>
+    <section>
+      <h2 id="contact-me" class="title">Contact Me</h2>
+      <div class="flexbox adjusted contact-me">
+        <a href="mailto:javier.larrazabal1988@gmail.com" class="contact-link">Email</a>
+        <a href="https://github.com/jlarrazabal" target="_blank" class="contact-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/javier-larrazabal-70ba6825/?locale=en_US" target="_blank" class="contact-link">LinkedIn</a>
+      </div>
     </section>
     <!-- My Footer -->
     <footer>
       <nav class="flexbox">
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">My Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
+        <div class="links footer-links">
+          <a href="#about-me">About Me</a>
+          <a href="#my-projects">My Projects</a>
+          <a href="#contact-me">Contact Me</a>
+          <a href="https://jlarrazabal.github.io/Resume/" target="_blank">Resume</a>
+        </div>
       </nav>
-      <div class="flexbox">
+      <div class="copy-rights">
         <h6>©Javier Larrazabal 2021</h6>
       </div>
     </footer>
