@@ -7,6 +7,25 @@
 }
 
 /* General Styles */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--color2);
+  font-weight: lighter;
+}
+
+main {
+  background: var(--color4);
+}
+
+a {
+  text-decoration: none;
+}
+
 .title {
   padding: 2rem;
   width: 100%;
