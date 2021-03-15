@@ -1,27 +1,21 @@
+/* Variables */
+:root {
+  --color1: #db6400;
+  --color2: #16697a;
+  --color3: #ffa62b;
+  --color4: #f8f1f1;
+}
+
 /* General Styles */
 .title {
   padding: 2rem;
-  width: 30%;
+  width: 100%;
   font-size: 4rem;
-  color: #db6400;
+  color: var(--color1);
   text-align: center;
   margin: 0 auto;
   border: 0;
   font-weight: normal;
-}
-
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  padding-bottom: 1rem;
-}
-
-.flex-column {
-  flex-direction: column;
 }
 
 .links {
@@ -33,14 +27,14 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #f8f1f1;
+  color: var(--color4);
   font-size: 2rem;
   padding: 2.5rem;
   font-weight: lighter;
 }
 
 .links a:hover {
-  color: #ffa62b;
+  color: var(--color3);
 }
 
 /* Header Styles */
@@ -50,7 +44,7 @@
   justify-content: space-between;
   align-items: center;
   width: inherit;
-  background-color: #16697a;
+  background-color: var(--color2);
 }
 
 .header-title {
@@ -67,8 +61,8 @@
   padding-right: 1rem;
   font-size: 4rem;
   margin: 0;
-  color: #f8f1f1;
-  background-color: #db6400;
+  color: var(--color4);
+  background-color: var(--color1);
   font-weight: bold;
 }
 
@@ -76,7 +70,7 @@
 .flexbox .my-picture {
   border-radius: 50%;
   width: 20%;
-  padding: 0;
+  padding-top: 2rem;
 }
 
 .greeting-text {
@@ -84,7 +78,7 @@
   padding: 1rem;
   width: 30%;
   font-size: 2.5rem;
-  color: #16697a;
+  color: var(--color2);
   font-weight: normal;
 }
 
@@ -97,12 +91,17 @@
 }
 
 /* My Projects Section Styles */
-.width-85 {
-  width: 85%
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
 }
 
-.width-70 {
-  width: 70%
+.flex-column {
+  flex-direction: column;
 }
 
 .card {
@@ -111,7 +110,7 @@
   width: 50%;
   margin: 0;
   padding-bottom: 2rem;
-  background-color: #f8f1f1;
+  background-color: var(--color4);
   border: 0;
 }
 
@@ -119,14 +118,13 @@
   margin: 0 auto;
   padding: 0.5rem;
   font-size: 2rem;
-  background-color: #16697a;
-  color: #f8f1f1;
+  background-color: var(--color2);
+  color: var(--color4);
   font-weight: normal;
 }
 
 .card img {
   margin: 0 auto;
-  font-size: 2rem;
   height: 70vh;
 }
 
@@ -138,15 +136,23 @@
   padding-left: 0.5rem;
   margin: 0.5rem auto;
   margin-top: 0;
-  background-color: #16697a;
-  color: #f8f1f1;
+  background-color: var(--color2);
+  color: var(--color4);
   text-align: left;
 }
 
 .card p span {
   font-size: 2rem;
   font-weight: normal;
-  color: #f8f1f1;
+  color: var(--color4);
+}
+
+.width-85 {
+  width: 85%
+}
+
+.width-70 {
+  width: 70%
 }
 
 /* Contact Me Styles */
@@ -154,12 +160,12 @@
   margin: 0;
   padding: 0 2.5rem;
   font-size: 3rem;
-  color: #16697a;
+  color: var(--color2);
   font-weight: lighter;
 }
 
 .contact-link:hover {
-  color: #ffa62b;
+  color: var(--color3);
 }
 
 .adjusted {
@@ -169,7 +175,7 @@
 
 /* Footer Styles */
 footer {
-  background-color: #16697a;
+  background-color: var(--color2);
 }
 
 .footer-links {
@@ -180,41 +186,38 @@ footer {
 }
 
 .copy-rights h6 {
-  color: #f8f1f1;
+  color: var(--color4);
   padding: 1rem;
   text-align: center;
 }
 
-/* Media Queries */
-
-@media screen and (max-width: 768px){
-
-  .title {
-    width: 50%;
-  }
-
+/* Media Queries - iPad */
+@media screen and (max-width: 768px) {
   .links {
     text-align: center;
   }
 
-  .flexbox {
-    flex-direction: column;
+  .card img {
+    height: 50vh;
+  }
+
+  .width-85 {
+    width: 95%;
   }
 
   .width-70 {
-    width: 85%
-  }
-
-  .contact-me {
-    flex-direction: row;
+    width: 90%;
   }
 
   .flexbox .my-picture {
     width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 
   .greeting-text {
-    width: 85%;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   .about-me {
@@ -222,55 +225,115 @@ footer {
   }
 
   .card {
-    width: 100%;
+    padding-bottom: 0.5rem;
   }
 
-  .footer-links a {
-    padding: 0 1rem;
+  .contact-me-links {
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 2rem;
   }
 
 }
 
-/* @media screen and (max-width: 375px){
+/* Media Queries - iPhone */
+@media screen and (max-width: 414px) {
+  .header-title {
+    height: 5rem;
+  }
 
-  .title {
-    width: 50%;
+  .header-title h1 {
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    font-size: 2.5rem;
   }
 
   .links {
     text-align: center;
   }
 
+  .links a {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+  .title {
+    padding: 1rem;
+    font-size: 2.5rem;
+  }
+
   .flexbox {
     flex-direction: column;
   }
 
-  .width-70 {
-    width: 85%
+  .card img {
+    height: 50vh;
   }
 
-  .contact-me {
-    flex-direction: row;
+  .width-85 {
+    width: 95%
+  }
+
+  .width-70 {
+    width: 95%
   }
 
   .flexbox .my-picture {
     width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 
   .greeting-text {
-    width: 85%;
+    width: 100%;
+    font-size: 1.5rem;
+    padding-bottom: 0;
   }
 
   .about-me {
     width: 95%;
+    font-size: 1.5rem;
   }
 
   .card {
     width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  .card h4 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+  }
+
+  .card p span {
+    font-size: 1.5rem;
+  }
+
+  #contact-me {
+    padding-top: 0;
+  }
+
+  .contact-me-links {
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .contact-link {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footer-links a {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
-
-} */
+}
