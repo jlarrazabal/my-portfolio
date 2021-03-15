@@ -16,6 +16,7 @@
   border: 0;
   color: var(--color2);
   font-weight: lighter;
+  scroll-behavior:smooth;
 }
 
 main {
@@ -268,7 +269,7 @@ footer {
 }
 
 /* Media Queries - iPhone */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
   .header-title {
     height: 5rem;
   }
