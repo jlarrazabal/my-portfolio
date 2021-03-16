@@ -211,8 +211,8 @@ footer {
   text-align: center;
 }
 
-/* Media Queries - iPad */
-@media screen and (max-width: 768px) {
+/* Media Queries - Tablets */
+@media screen and (max-width: 992px) {
   .links {
     text-align: center;
   }
@@ -268,7 +268,7 @@ footer {
 
 }
 
-/* Media Queries - iPhone */
+/* Media Queries - Phones */
 @media screen and (max-width: 600px) {
   .header-title {
     height: 5rem;
